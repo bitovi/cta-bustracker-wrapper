@@ -8,8 +8,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.use("/ctabustracker/api", getRoutes);
-app.use("/ctabustracker/api", getVehicles);
+app.use("/api", getRoutes);
+app.use("/api", getVehicles);
 
 // set 404 for routes not found
 app.use((_req: Request, res: Response, _next: NextFunction) => {
